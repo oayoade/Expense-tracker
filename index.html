@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="controller.js"></script>
+    <title>Expense Tracker</title>
+</head>
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+<body>
+    <h1>Expense Tracker</h1>
+    <form>
+        Expense: <input id="name" type="text" placeholder="Wetin you buy..">
+        Date: <input id="date" type="date">
+        Amount:  <input id="amount" type="number">
+    </form>
+    <button id="AddButton" onclick="AddEntry()">Add Expense</button>
+<table id="tabl" style="width:100%">
+<th id="TableExp">Expense</th>
+<th id="TableAmt">Amount</th>
+<th id="TableDate">Date</th>
+
+</table>
+<button id="totalbutton" onclick="calculate_total()"> Total </button>
+
+<p id="total">  </p>
+
+</body>
+</html>
